@@ -1,0 +1,60 @@
+Will be using openweather map.
+https://home.openweathermap.org/api_keys
+Sign up to the website.	
+
+
+We can even create an API key by giving an key name
+
+Copy, Paste:
+f059f418020744316e6d2b918bd5e240 created
+75b31160e847eff782e127fda7c5665e
+ default--> 
+
+Current weather data:
+https://openweathermap.org/current
+
+We will use by city name:
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+
+https://api.openweathermap.org/data/2.5/weather?q=pune&appid=75b31160e847eff782e127fda7c5665e
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=75b31160e847eff782e127fda7c5665e
+
+cls
+dir
+yarn start
+
+how do you convert an function into async:
+const getWeatherInfo =()=> {};
+const getWeatherInfo =async ()=> {};
+while using async, we need some try and catch block also.
+
+How to make this linke customizable?
+let url="https://api.openweathermap.org/data/2.5/weather?q=London&appid=75b31160e847eff782e127fda7c5665e";
+That is using back-tick or ecma script
+
+How to fetch api:
+const res=fetch(url);
+then converting into a readable format:
+const data = await res.json();
+
+object destructuring
+
+json formatter extensinon
+
+useContext
+
+
+
+const Weathercard = ({tempinfo}) => { // as we are passing the array of the objects
+    // again doing object destructuring.
+    const [weatherState, setWeatherState] = useState("");
+    const {
+        temp, humidity, pressure, weathermood, name, speed, country, sunset
+    } =tempinfo;
+
+
+While oject destructuring always use the local variable same name as its object name
+
+
+
